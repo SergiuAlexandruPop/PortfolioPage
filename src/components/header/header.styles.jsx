@@ -2,36 +2,30 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const HeaderContainer = styled.div`
-  height: 70px;
+  height: 7rem;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 25px;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2rem;
+  background-color: #5c5297;
+  border-radius: 3.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   @media screen and (max-width: 800px) {
-    height: 60px;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-`;
-
-export const HomeContainer = styled.div`
-  height: 100%;
-  width: 70px;
-  padding: 25px;
-
-  @media screen and (max-width: 800px) {
-    width: 50px;
-    padding: 0;
+    height: 6rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
   }
 `;
 
 export const OptionsContainer = styled.div`
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
   cursor: pointer;
 
   @media screen and (max-width: 800px) {
@@ -40,6 +34,7 @@ export const OptionsContainer = styled.div`
 `;
 
 export const OptionLink = styled(Link)`
-  padding: 10px 15px;
+  padding: 1rem 1.5rem;
   cursor: pointer;
+  color: #ffffff;
 `;

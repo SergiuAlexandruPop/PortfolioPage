@@ -1,6 +1,7 @@
 import React from "react";
 
 import Header from "./components/header/header.component";
+import HomePage from "./components/homePage/home.component";
 
 import { GlobalStyle } from "./global.styles";
 
@@ -9,6 +10,7 @@ function App() {
     <div>
       <GlobalStyle />
       <Header />
+      <HomePage />
     </div>
   );
 }
