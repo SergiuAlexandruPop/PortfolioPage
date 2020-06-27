@@ -2,13 +2,10 @@ import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
 const LinksContainerStyles = css`
-  display: grid | inline-grid;
-  grid-gap: 3rem;
-  justify-items: center;
-  font-size: 5rem;
-  opacity: 0.9;
-  margin: 0;
-  margin-top: 4rem;
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  color: #493e8b;
 `;
 
 export const HomePageContainer = styled.div`
@@ -23,27 +20,49 @@ export const ProfilePictureContainer = styled.div`
 `;
 
 export const NameContainer = styled.h1`
-  ${LinksContainerStyles}
-  animation: fadein 2s;
+  display: grid | inline-grid;
+  grid-gap: 3rem;
+  justify-items: center;
+  font-size: 5rem;
+  opacity: 0.9;
+  margin: 0;
+  margin-top: 4rem;
 `;
 
 export const ProfessionName = styled.h1`
-  color: #493e8b;
+  color: #6558ad;
   font-size: 3rem;
   opacity: 0.9;
   margin: 0 1;
 `;
 
 export const OptionLink = styled(Link)`
-  font-size: 2rem;
-  padding: 1rem 1.5rem;
+  ${LinksContainerStyles}
+`;
+
+export const PhoneNumberContainer = styled.a`
+  ${LinksContainerStyles}
+  padding : 1rem 0;
+  margin-left: -4rem;
+`;
+
+export const EmailContainer = styled.a`
+  font-size: 1.8rem;
+  padding: 1rem;
   cursor: pointer;
   color: #493e8b;
+  margin-left: -6rem;
 `;
 
 export const FooterContainer = styled.footer`
-  ${LinksContainerStyles}
+  display: grid;
+  justify-content: space-around;
+  width: 17%;
+  grid-template-columns: 50% 50%;
   border-top: 0.1rem solid #493e8b;
+  font-size: 5rem;
+  opacity: 0.9;
+  margin: 0;
 `;
 
 export const RocketContainer = styled.div`

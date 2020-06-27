@@ -1,6 +1,7 @@
 import React from "react";
-//import Profilepic from "../../assets/images/Profilepic.jpg";
 import rocket from "../../assets/gifs/rocket.gif";
+import { ReactComponent as Phone } from "../../assets/svgs/phone.svg";
+import Header from "../header/header.component";
 
 import {
   NameContainer,
@@ -9,22 +10,22 @@ import {
   OptionLink,
   FooterContainer,
   RocketContainer,
-  //ProfilePictureContainer,
+  PhoneNumberContainer,
+  EmailContainer,
 } from "./home.styles";
 
 const HomePage = () => {
   return (
     <HomePageContainer>
-      {/* <ProfilePictureContainer>
-        <img src={Profilepic} alt="Selfie" style={{ width: "15.5rem" }} />
-      </ProfilePictureContainer> */}
+      <Header />
       <NameContainer>
-        <span style={{ color: "#493E8B" }}>Sergiu-Alexandru</span>
+        <span style={{ color: "#7e72c0" }}>Sergiu</span>
         <span style={{ color: "#FFA501" }}>Pop</span>
       </NameContainer>
-      <ProfessionName>Front-End Developer</ProfessionName>
+
+      <ProfessionName>Software Developer</ProfessionName>
       <RocketContainer>
-        <img src={rocket} alt="Selfie" style={{ width: "30rem" }} />
+        <img src={rocket} alt="RochetGif" style={{ width: "30rem" }} />
       </RocketContainer>
       <FooterContainer>
         <OptionLink
@@ -39,6 +40,13 @@ const HomePage = () => {
         >
           GitHub
         </OptionLink>
+        <Phone />
+        <PhoneNumberContainer href="tel:0747016558">
+          0747016558
+        </PhoneNumberContainer>
+        <EmailContainer href="mailto: sergiualexandrupop@gmail.com">
+          sergiualexandrupop@gmail.com
+        </EmailContainer>
       </FooterContainer>
     </HomePageContainer>
   );

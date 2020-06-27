@@ -1,13 +1,21 @@
 import React from "react";
 
-import { HeaderContainer, OptionsContainer, OptionLink } from "./header.styles";
+import rocket from "../../assets/gifs/rocket.gif";
 
-const Header = () => {
+import {
+  HeaderContainer,
+  OptionsContainer,
+  OptionLink,
+  HomeOptionLink,
+} from "./modifiedHeader.styles";
+
+const ModifiedHeader = () => {
   return (
     <HeaderContainer>
-      {/* <div>
-        <OptionLink to="/home">Home</OptionLink>
-      </div> */}
+      <HomeOptionLink to="/home">
+        <img src={rocket} alt="RochetGif" style={{ width: "7rem" }} />
+      </HomeOptionLink>
+
       <OptionsContainer>
         <OptionLink to="/aboutme">About Me</OptionLink>
         <OptionLink to="/blog">Blog</OptionLink>
@@ -18,4 +26,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default ModifiedHeader;
