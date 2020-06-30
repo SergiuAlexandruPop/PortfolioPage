@@ -7,11 +7,15 @@ import {
   NameContainer,
   HomePageContainer,
   ProfessionName,
-  OptionLink,
   FooterContainer,
-  RocketContainer,
+  RocketHomeContainer,
   PhoneNumberContainer,
   EmailContainer,
+  LinkedInLink,
+  GitHubLink,
+  PhoneLogoContainer,
+  FirstNameContainer,
+  LastNameContainer,
 } from "./home.styles";
 
 const HomePage = () => {
@@ -19,28 +23,29 @@ const HomePage = () => {
     <HomePageContainer>
       <Header />
       <NameContainer>
-        <span style={{ color: "#7e72c0" }}>Sergiu</span>
-        <span style={{ color: "#FFA501" }}>Pop</span>
+        <FirstNameContainer>Sergiu</FirstNameContainer>
+        <LastNameContainer>Pop</LastNameContainer>
       </NameContainer>
 
       <ProfessionName>Software Developer</ProfessionName>
-      <RocketContainer>
-        <img src={rocket} alt="RochetGif" style={{ width: "30rem" }} />
-      </RocketContainer>
+      <RocketHomeContainer src={rocket} alt="RochetGif" />
       <FooterContainer>
-        <OptionLink
+        <LinkedInLink
           to={{ pathname: "https://www.linkedin.com/in/sergiualexandrupop/" }}
           target="_blank"
         >
           LinkedIn
-        </OptionLink>
-        <OptionLink
+        </LinkedInLink>
+        <GitHubLink
           to={{ pathname: "https://github.com/SergiuAlexandruPop" }}
           target="_blank"
         >
           GitHub
-        </OptionLink>
-        <Phone />
+        </GitHubLink>
+        <PhoneLogoContainer>
+          <Phone />
+        </PhoneLogoContainer>
+
         <PhoneNumberContainer href="tel:0747016558">
           0747016558
         </PhoneNumberContainer>

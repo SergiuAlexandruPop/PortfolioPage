@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { RocketContainer } from "../homePage/home.styles";
 
 export const HeaderContainer = styled.div`
   height: 7rem;
@@ -15,6 +16,12 @@ export const HeaderContainer = styled.div`
     padding: 1rem;
     margin-bottom: 2rem;
   }
+`;
+
+export const RocketModifiedHeaderContainer = styled.img`
+  ${RocketContainer}
+  width: 7rem;
+  height: auto;
 `;
 
 export const OptionsContainer = styled.div`

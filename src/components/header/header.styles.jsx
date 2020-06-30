@@ -1,39 +1,80 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const HeaderContainer = styled.div`
+export const OptionsContainer = styled.div`
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-content: center;
+  align-content: center;
+  align-self: center;
   height: 3.5rem;
   width: 40%;
   display: flex;
-  align-items: center;
+  cursor: pointer;
   font-size: 2rem;
+
   background: linear-gradient(to bottom, #7e72c052 7%, #7e72c0d3 75%, #7e72c0);
   border-radius: 3.5rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   @media screen and (max-width: 800px) {
+    width: 80%;
     height: 6rem;
     padding: 1rem;
     margin-bottom: 2rem;
   }
-`;
 
-export const OptionsContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  cursor: pointer;
-
-  @media screen and (max-width: 800px) {
-    width: 80%;
+  @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+    width: 95%;
+    font-size: 1.5rem;
   }
 `;
 
 export const OptionLink = styled(Link)`
   padding: 1rem 1.5rem;
   cursor: pointer;
-  color: white;
+  color: #ffffff;
+  justify-self: stretch;
+  align-self: center;
 `;
+
+// export const HeaderContainer = styled.div`
+//   display: flex;
+//   height: 3.5rem;
+//   width: 40%;
+//   font-size: 2rem;
+//   background: linear-gradient(to bottom, #7e72c052 7%, #7e72c0d3 75%, #7e72c0);
+//   border-radius: 3.5rem;
+//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+//   @media screen and (max-width: 800px) {
+//     height: 6rem;
+//     padding: 1rem;
+//     margin-bottom: 2rem;
+//   }
+
+//   @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+//     width: 100%;
+//   }
+// `;
+
+// export const OptionsContainer = styled.div`
+
+//   display: flex;
+//   justify-self: center;
+//   justify-content: center;
+//   align-content: center;
+//   align-self: center;
+//   width: 100%;
+//   display: flex;
+//   cursor: pointer;
+
+//   @media screen and (max-width: 800px) {
+//     width: 80%;
+//   }
+
+//   @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+//     font-size: 1.5rem;
+//   }
+// `;
