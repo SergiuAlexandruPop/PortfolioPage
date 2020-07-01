@@ -18,7 +18,7 @@ import {
   LastNameContainer,
 } from "./home.styles";
 
-const HomePage = () => {
+function HomePage() {
   return (
     <HomePageContainer>
       <Header />
@@ -55,6 +55,6 @@ const HomePage = () => {
       </FooterContainer>
     </HomePageContainer>
   );
-};
+}
 
 export default HomePage;

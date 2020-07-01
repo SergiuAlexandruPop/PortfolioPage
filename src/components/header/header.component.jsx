@@ -5,7 +5,7 @@ import { OptionsContainer, OptionLink } from "./header.styles";
 const Header = () => {
   return (
     <OptionsContainer>
-      <OptionLink to="/aboutme">About Me</OptionLink>
+      <OptionLink to="/aboutme">AboutMe</OptionLink>
       <OptionLink to="/blog">Blog</OptionLink>
       <OptionLink
         to={{
@@ -17,7 +17,7 @@ const Header = () => {
         Résumé
       </OptionLink>
 
-      <OptionLink to="/portofolio">Portofolio</OptionLink>
+      <OptionLink to="/portfolio">Portofolio</OptionLink>
     </OptionsContainer>
   );
 };

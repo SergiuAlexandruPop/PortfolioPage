@@ -1,6 +1,14 @@
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
+const TransitionEffectStyles = css`
+  transition: all 0.05s;
+
+  &:hover {
+    transform: scale(1.02) translateY(0.1rem);
+  }
+`;
+
 const LinksContainerStyles = css`
   font-size: 2rem;
   padding: 1rem 1.5rem;
@@ -66,6 +74,10 @@ export const LinkedInLink = styled(Link)`
   grid-row-end: 2;
   justify-self: end;
 
+  transition: all 0.05s;
+
+  ${TransitionEffectStyles}
+
   @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
     margin-right: 1rem;
     margin-top: 1rem;
@@ -79,6 +91,8 @@ export const GitHubLink = styled(Link)`
   grid-row-start: 1;
   grid-row-end: 2;
   justify-self: start;
+
+  ${TransitionEffectStyles}
 
   @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
     margin-left: 1rem;
@@ -96,6 +110,8 @@ export const PhoneNumberContainer = styled.a`
   grid-row-start: 2;
   grid-row-end: 3;
   justify-self: end;
+
+  ${TransitionEffectStyles}
 `;
 
 export const PhoneLogoContainer = styled.a`
@@ -120,6 +136,8 @@ export const EmailContainer = styled.a`
   grid-row-end: 4;
   justify-self: center;
   align-self: center;
+
+  ${TransitionEffectStyles}
 
   @media screen and (max-width: 1300px) {
     font-size: 1.4rem;

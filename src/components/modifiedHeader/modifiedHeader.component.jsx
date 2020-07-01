@@ -18,7 +18,9 @@ const ModifiedHeader = () => {
       </HomeOptionLink>
 
       <OptionsContainer>
-        <OptionLink to="/aboutme">About Me</OptionLink>
+        <OptionLink to="/aboutme">
+          <span>AboutMe</span>
+        </OptionLink>
         <OptionLink to="/blog">Blog</OptionLink>
         <OptionLink
           to={{
@@ -29,7 +31,7 @@ const ModifiedHeader = () => {
         >
           Résumé
         </OptionLink>
-        <OptionLink to="/portofolio">Portofolio</OptionLink>
+        <OptionLink to="/portfolio">Portofolio</OptionLink>
       </OptionsContainer>
     </HeaderContainer>
   );

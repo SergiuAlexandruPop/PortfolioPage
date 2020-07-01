@@ -2,10 +2,9 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 body {
-    display: flex;
-    justify-content: center;
     font-family: "Open Sans Condensed";
     padding: 2rem 8rem;
+    
     
 
     @media screen and (max-width: 800px) {

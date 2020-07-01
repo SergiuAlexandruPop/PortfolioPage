@@ -14,6 +14,7 @@ import {
   AboutMeBodyContainer,
   ParagraphPictureContainer,
   CourseLinkContainer,
+  CoursesCollectionContainer,
 } from "./aboutMe.styles";
 
 const AboutMe = () => {
@@ -61,11 +62,11 @@ const AboutMe = () => {
 
             <br />
             {coursesData.map(({ name, url, id }) => (
-              <li key={id}>
+              <CoursesCollectionContainer key={id}>
                 <CourseLinkContainer to={{ pathname: url }} target="_blank">
                   {name}
                 </CourseLinkContainer>
-              </li>
+              </CoursesCollectionContainer>
             ))}
           </AboutParagraphContainer>
         </AboutMeContainer>
