@@ -8,22 +8,43 @@ import {
   ProjectClothingContainer,
   ProjectImage,
   ProjectDetailsContainer,
+  ParagraphContainer,
+  ButtonsContainer,
+  ButtonContainer,
 } from "./portfolio.styles";
 
 const Portfolio = () => {
+  function liveLinkClick() {
+    window.open("https://sergiu-clothing-app.herokuapp.com/", "_blank");
+  }
+
+  function gitubLinkClick() {
+    window.open(
+      "https://github.com/SergiuAlexandruPop/crwn-clothing",
+      "_blank"
+    );
+  }
   return (
-    <div>
+    <>
       <ModifiedHeader />
       <PortfolioContainer>
         <ProjectClothingContainer>
           <ProjectImage src={ClothingGif} alt="Clothing Project GIF" />
           <ProjectDetailsContainer>
-            <p>Clothing App</p>
-            <p>FRONT-END PROJECT</p>
+            <h3>Clothing Website</h3>
+            <h2>FRONT-END PROJECT</h2>
+            <ParagraphContainer>
+              React.js | Redux | Context | Hooks | React-Lazy | Firebase |
+              Stripe | CSS-in-JS | Redux-thunk(previosly) | Redux-saga(present)
+            </ParagraphContainer>
           </ProjectDetailsContainer>
+          <ButtonsContainer>
+            <ButtonContainer onClick={liveLinkClick}>Live</ButtonContainer>
+            <ButtonContainer onClick={gitubLinkClick}>Github</ButtonContainer>
+          </ButtonsContainer>
         </ProjectClothingContainer>
       </PortfolioContainer>
-    </div>
+    </>
   );
 };
 
