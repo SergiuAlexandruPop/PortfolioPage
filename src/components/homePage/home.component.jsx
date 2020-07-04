@@ -16,6 +16,8 @@ import {
   PhoneLogoContainer,
   FirstNameContainer,
   LastNameContainer,
+  FacebookLink,
+  InstagramLink,
 } from "./home.styles";
 
 function HomePage() {
@@ -52,6 +54,18 @@ function HomePage() {
         <EmailContainer href="mailto: sergiualexandrupop@gmail.com">
           sergiualexandrupop@gmail.com
         </EmailContainer>
+        <FacebookLink
+          to={{ pathname: "https://www.facebook.com/PopSergiuu" }}
+          target="_blank"
+        >
+          Facebook
+        </FacebookLink>
+        <InstagramLink
+          to={{ pathname: "https://www.instagram.com/popsergiuu/" }}
+          target="_blank"
+        >
+          Instagram
+        </InstagramLink>
       </FooterContainer>
     </HomePageContainer>
   );

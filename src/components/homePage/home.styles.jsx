@@ -34,6 +34,10 @@ const LinksContainerStyles = css`
   @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
     padding: 0;
   }
+
+  @media screen and (max-width: 320px) {
+    padding: 0;
+  }
 `;
 
 export const HomePageContainer = styled.div`
@@ -56,7 +60,7 @@ export const NameContainer = styled.div`
   }
 
   @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
-    margin-top: 10rem;
+    margin-top: 3rem;
   }
 
   @media only screen and (max-width: 412px) and (max-height: 869px) and (-webkit-device-pixel-ratio: 3.5) {
@@ -64,11 +68,16 @@ export const NameContainer = styled.div`
   }
 
   @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-    margin-top: 1rem;
+    margin-top: 0;
+    padding: 1rem;
   }
 
   @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
-    margin-top: 10rem;
+    margin-top: 5rem;
+  }
+
+  @media screen and (max-width: 320px) {
+    margin-top: 0;
   }
 `;
 
@@ -79,6 +88,14 @@ export const FirstNameContainer = styled.h1`
   @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     font-size: 6rem;
   }
+
+  @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 320px) {
+    margin 0;
+  }
 `;
 
 export const LastNameContainer = styled.h1`
@@ -87,6 +104,14 @@ export const LastNameContainer = styled.h1`
 
   @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     font-size: 6rem;
+  }
+
+  @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 320px) {
+    margin 0;
   }
 `;
 
@@ -110,6 +135,101 @@ export const ProfessionName = styled.h1`
 
   @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
     margin: 0;
+  }
+
+  @media screen and (max-width: 320px) {
+    margin 1rem 0 0 0 ;
+    font-size: 2rem;
+  }
+`;
+
+export const RocketContainer = css`
+  animation: shake 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  animation-delay: -0.1s;
+  animation-duration: 1.5s;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+
+  @keyframes shake {
+    0%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+`;
+
+export const RocketHomeContainer = styled.img`
+  ${RocketContainer}
+  width: 30rem;
+  height: auto;
+`;
+
+export const FooterContainer = styled.footer`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 5rem);
+
+  width: 22%;
+  border-top: 0.1rem solid #493e8b;
+  font-size: 5rem;
+  opacity: 0.9;
+  margin: 0;
+
+  @media screen and (min-width: 1900px) {
+    width: 15%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 25%;
+  }
+
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    width: 50%;
+    grid-gap: 2rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 40%;
+  }
+
+  @media screen and (max-width: 425px) {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+    width: 90%;
+  }
+
+  @media only screen and (max-width: 412px) and (max-height: 869px) and (-webkit-device-pixel-ratio: 3.5) {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
+    width: 90%;
+  }
+  @media screen and (max-width: 320px) {
+    width: 90%;
   }
 `;
 
@@ -144,6 +264,11 @@ export const LinkedInLink = styled(Link)`
     margin-right: 1rem;
     margin-top: 1rem;
   }
+
+  @media screen and (max-width: 320px) {
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
 `;
 
 export const GitHubLink = styled(Link)`
@@ -173,6 +298,11 @@ export const GitHubLink = styled(Link)`
 
   @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
     margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  @media screen and (max-width: 320px) {
+    margin-right: 1rem;
     margin-top: 1rem;
   }
 `;
@@ -242,89 +372,74 @@ export const EmailContainer = styled.a`
   }
 `;
 
-export const FooterContainer = styled.footer`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 5rem);
+export const FacebookLink = styled(Link)`
+  ${LinksContainerStyles}
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  justify-self: end;
 
-  width: 22%;
-  border-top: 0.1rem solid #493e8b;
-  font-size: 5rem;
-  opacity: 0.9;
-  margin: 0;
+  transition: all 0.05s;
 
-  @media screen and (min-width: 1900px) {
-    width: 15%;
-  }
-
-  @media screen and (max-width: 1200px) {
-    width: 25%;
-  }
-
-  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    width: 50%;
-    grid-gap: 2rem;
-  }
-
-  @media screen and (max-width: 900px) {
-    width: 40%;
-  }
-
-  @media screen and (max-width: 425px) {
-    width: 80%;
-  }
+  ${TransitionEffectStyles}
 
   @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
-    width: 90%;
+    margin-right: 1rem;
+    margin-top: 1rem;
   }
 
   @media only screen and (max-width: 412px) and (max-height: 869px) and (-webkit-device-pixel-ratio: 3.5) {
-    width: 80%;
+    margin-right: 1rem;
+    margin-top: 1rem;
   }
 
   @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-    width: 80%;
+    margin-right: 1rem;
+    margin-top: 1rem;
   }
 
   @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
-    width: 90%;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
+  @media screen and (max-width: 320px) {
+    margin-right: 1rem;
   }
 `;
 
-export const RocketContainer = css`
-  animation: shake 0.6s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-  animation-delay: -0.1s;
-  animation-duration: 1.5s;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+export const InstagramLink = styled(Link)`
+  ${LinksContainerStyles}
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  justify-self: start;
 
-  @keyframes shake {
-    0%,
-    90% {
-      transform: translate3d(-1px, 0, 0);
-    }
+  ${TransitionEffectStyles}
 
-    20%,
-    80% {
-      transform: translate3d(2px, 0, 0);
-    }
-
-    30%,
-    50%,
-    70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-
-    40%,
-    60% {
-      transform: translate3d(4px, 0, 0);
-    }
+  @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+    margin-left: 1rem;
+    margin-top: 1rem;
   }
-`;
 
-export const RocketHomeContainer = styled.img`
-  ${RocketContainer}
-  width: 30rem;
-  height: auto;
+  @media only screen and (max-width: 412px) and (max-height: 869px) and (-webkit-device-pixel-ratio: 3.5) {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  @media screen and (max-width: 320px) {
+    margin-right: 1rem;
+  }
 `;
