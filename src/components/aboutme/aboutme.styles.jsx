@@ -22,8 +22,30 @@ export const ProfilePictureContainer = styled.img`
   grid-row-start: 1;
   grid-row-end: 4;
 
+  @media screen and (max-width: 425px) {
+    margin-top: 12%;
+  }
+
   @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
     margin-top: 12%;
+  }
+
+  @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+    margin-top: 12%;
+  }
+
+  @media only screen and (max-width: 412px) and (max-height: 869px) and (-webkit-device-pixel-ratio: 3.5) {
+    margin-top: 12%;
+  }
+
+  @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
+    margin-top: 12%;
+    width: 17rem;
+  }
+
+  @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    margin-top: 12%;
+    width: 17rem;
   }
 `;
 
@@ -33,8 +55,28 @@ export const AboutMeContainer = styled.div`
   justify-items: center;
   width: 70%;
 
+  @media screen and (max-width: 425px) {
+    width: 95%;
+  }
+
   @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
     width: 95%;
+  }
+
+  @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+    width: 95%;
+  }
+
+  @media only screen and (max-width: 412px) and (max-height: 869px) and (-webkit-device-pixel-ratio: 3.5) {
+    width: 95%;
+  }
+
+  @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
+    width: 100%;
   }
 `;
 
@@ -43,6 +85,7 @@ export const AboutParagraphContainer = styled.p`
   flex-direction: column;
   font-weight: 300;
   font-size: 1.5rem;
+  line-height: 2.5rem;
   padding: 2rem;
   border-bottom: 0.5px solid #ebebeb;
 
@@ -50,8 +93,33 @@ export const AboutParagraphContainer = styled.p`
     border: none;
   }
 
-  @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  @media screen and (max-width: 900px) {
     border-bottom: 0.5px solid #d4d3d3;
+  }
+
+  @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) or (-webkit-device-pixel-ratio: 2) {
+    border-bottom: 0.5px solid #d4d3d3;
+    padding: 2rem 0.5rem;
+  }
+
+  @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+    border-bottom: 0.5px solid #d4d3d3;
+    padding: 2rem 0.5rem;
+  }
+
+  @media only screen and (max-width: 412px) and (max-height: 869px) and (-webkit-device-pixel-ratio: 3.5) {
+    border-bottom: 0.5px solid #d4d3d3;
+    padding: 2rem 0.5rem;
+  }
+
+  @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    border-bottom: 0.5px solid #d4d3d3;
+    padding: 2rem 0.5rem;
+  }
+
+  @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
+    border-bottom: 0.5px solid #d4d3d3;
+    padding: 2rem 0.5rem;
   }
 `;
 
@@ -73,4 +141,12 @@ export const CoursesCollectionContainer = styled.li`
 export const CourseLinkContainer = styled(Link)`
   font-weight: 400;
   font-size: 1.5rem;
+
+  @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
+    font-size: 1.4rem;
+  }
+
+  @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    font-size: 1.4rem;
+  }
 `;

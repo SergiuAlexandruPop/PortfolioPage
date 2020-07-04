@@ -1,19 +1,27 @@
 import styled from "styled-components";
-//import { Link } from "react-router-dom";
 
 export const PortfolioContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    margin-top: 10rem;
+  }
 `;
 
 export const ProjectClothingContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 33%;
+  width: 50rem;
   height: 55rem;
   margin: 5%;
   border: 1px solid black;
   overflow: hidden;
+
+  @media screen and (max-width: 450px) {
+    margin: 0;
+  }
 `;
 
 export const ProjectImage = styled.img`
@@ -33,14 +41,38 @@ export const ProjectDetailsContainer = styled.div`
     font-size: 2rem;
     margin: 0.2rem;
     margin-left: 10%;
-    font-weight: 500;
+    font-weight: 400;
+
+    @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+      font-size: 1.65rem;
+    }
+  
+    @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
+      font-size: 1.65rem;
+    }
+
+    @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+      font-size: 1.65rem;
+    }
   }
 
   h2 {
     font-size: 1.75rem;
     margin: 0.2rem;
     margin-left: 40%;
-    font-weight: 500;
+    font-weight: 700;
+
+    @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+      font-size: 1.65rem;
+    }
+  
+    @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
+      font-size: 1.65rem;
+    }
+
+    @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+      font-size: 1.65rem;
+    }
   }
 
  
@@ -53,6 +85,14 @@ export const ParagraphContainer = styled.p`
   font-size: 1.8rem;
   font-weight: 100;
   font-family: monospace, "Lucida Console", Courier;
+
+  @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
+    font-size: 1.65rem;
+  }
+
+  @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    font-size: 1.65rem;
+  }
 `;
 
 export const ButtonsContainer = styled.div`
