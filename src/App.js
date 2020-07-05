@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 
 import HomePage from "./components/homePage/home.component";
-import AboutMe from "./components/aboutMe/aboutMe.component";
+import AboutMe from "./components/aboutme/aboutMe.component";
 import Portfolio from "./components/portfolio/portfolio.component";
 import MainBlogPage from "./components/blog/mainBlogPage/mainBlogPage.component";
 import FirstPost from "./components/blog/blogPosts/FirstPost/FirstPost.component";
