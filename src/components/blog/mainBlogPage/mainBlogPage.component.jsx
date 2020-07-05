@@ -2,17 +2,29 @@ import React from "react";
 
 import ModifiedHeader from "../../modifiedHeader/modifiedHeader.component";
 
-import { MainBlogPageContainer, PostsContainer } from "./mainBlogPage.styles";
+import {
+  MainBlogPageContainer,
+  PostsContainer,
+  DateContainer,
+  PostAndDateContainer,
+} from "./mainBlogPage.styles";
 
 const MainBlogPage = () => {
   return (
     <>
       <ModifiedHeader />
       <MainBlogPageContainer>
-        <PostsContainer to="/first-post">
-          {`<firstPost>Hello World!</firstPost>`}
-        </PostsContainer>
-        <PostsContainer to="/who-am-I">Who am I ?</PostsContainer>
+        <PostAndDateContainer>
+          <PostsContainer to="/first-post">
+            {`<firstPost>Hello World!</firstPost>`}
+          </PostsContainer>
+          <DateContainer>04.07.2020</DateContainer>
+        </PostAndDateContainer>
+
+        <PostAndDateContainer>
+          <PostsContainer to="/who-am-I">Who am I ?</PostsContainer>
+          <DateContainer>04.07.2020</DateContainer>
+        </PostAndDateContainer>
       </MainBlogPageContainer>
     </>
   );
