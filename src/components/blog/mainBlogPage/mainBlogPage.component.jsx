@@ -15,9 +15,7 @@ const MainBlogPage = () => {
       <ModifiedHeader />
       <MainBlogPageContainer>
         <PostAndDateContainer>
-          <PostsContainer to="/first-post">
-            {`<firstPost>Hello World!</firstPost>`}
-          </PostsContainer>
+          <PostsContainer to="/first-post">Hello World!</PostsContainer>
           <DateContainer>04.07.2020</DateContainer>
         </PostAndDateContainer>
 

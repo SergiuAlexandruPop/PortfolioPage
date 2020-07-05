@@ -41,7 +41,7 @@ const FirstPost = () => {
               scratch.
             </p>
             <p>
-              -Didn't have $2000 for a bootcamp -`{">"}` found Udemy & online
+              -Didn't have $2000 for a bootcamp -{">"} found Udemy & online
               resources.
             </p>
             <p>
