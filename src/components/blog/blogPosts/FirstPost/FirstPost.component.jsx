@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import ModifiedHeader from "../../../modifiedHeader/modifiedHeader.component";
 
 import JobSearchingDog from "../../../../assets/images/JobSearchingDog.jpeg";
@@ -11,7 +10,6 @@ import {
   ParagraphContainer,
   DogPhotoContainer,
   PeriodicTableContainer,
-  GeneralLink,
 } from "./FirstPost.styles";
 
 const FirstPost = () => {
