@@ -24,7 +24,8 @@ const ModifiedHeader = () => {
         <OptionLink to="/blog">Blog</OptionLink>
         <OptionLink
           to={{
-            pathname: "https://drive.google.com/drive/u/1/my-drive",
+            pathname:
+              "https://drive.google.com/file/d/12m8FtN_igh1Pidh8e9fxMQbh3N66RTOV/view",
           }}
           target="_blank"
         >
