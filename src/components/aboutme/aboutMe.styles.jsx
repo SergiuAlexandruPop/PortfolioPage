@@ -10,8 +10,8 @@ export const AboutMeBodyContainer = styled.div`
 `;
 
 export const ProfilePictureContainer = styled.img`
-  width: 20rem;
-  border-radius: 12.5rem;
+  width: 32rem;
+  border-radius: 15.5rem;
   justify-self: center;
   align-self: center;
   margin-right: 5%;
