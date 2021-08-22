@@ -20,6 +20,9 @@ const FirstPost = lazy(() =>
 const WhoAmI = lazy(() =>
   import("./components/blog/blogPosts/WhoAmI/WhoAmI.component")
 );
+const LearnFrontEnd = lazy(() =>
+  import("./components/blog/blogPosts/LearnFrontEnd/LearnFrontEnd.component")
+);
 
 function App() {
   return (
@@ -34,6 +37,7 @@ function App() {
             <Route exact path="/blog" component={MainBlogPage} />
             <Route exact path="/First-Post" component={FirstPost} />
             <Route exact path="/Who-am-I" component={WhoAmI} />
+            <Route exact path="/learn-front-end" component={LearnFrontEnd} />
           </Suspense>
         </ErrorBoundary>
       </Switch>

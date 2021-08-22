@@ -23,6 +23,11 @@ const MainBlogPage = () => {
           <PostsContainer to="/who-am-I">Who am I ?</PostsContainer>
           <DateContainer>04.07.2020</DateContainer>
         </PostAndDateContainer>
+
+        <PostAndDateContainer>
+          <PostsContainer to="/learn-front-end">How to become a web developer</PostsContainer>
+          <DateContainer>21.07.2021</DateContainer>
+        </PostAndDateContainer>
       </MainBlogPageContainer>
     </>
   );
