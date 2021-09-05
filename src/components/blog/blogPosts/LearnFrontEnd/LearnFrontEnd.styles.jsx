@@ -5,15 +5,22 @@ export const BodyContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-`;
+  width: 80%;
+  margin: 10rem auto;
+  box-shadow: 0 0 60px -40px #aaa;
+  border: 1px solid #fff;
+  padding: .7rem 2rem 2rem;
 
-export const PeriodicTableContainer = styled.img`
-  background-color: black;
-  width: 65%;
-  align-self: center;
+  @media screen and (max-width: 1000px) {
+    width: 95%;
+    margin: 8rem auto;
+    box-shadow: none;
+  }
 
-  @media screen and (max-width: 600px) {
-    width: 100%;
+  @media screen and (max-width: 1000px) {
+    width: 95%;
+    margin: 8rem auto;
+    box-shadow: none;
   }
 `;
 

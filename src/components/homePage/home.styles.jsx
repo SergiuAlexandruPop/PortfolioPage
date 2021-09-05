@@ -1,44 +1,29 @@
-import styled, { css } from "styled-components";
-import { Link } from "react-router-dom";
+import styled, {css} from "styled-components";
+import {Link} from "react-router-dom";
 
-const TransitionEffectStyles = css`
-  transition: all 0.05s;
+export const DividerContainer = styled.div`
+  width: 60%;
+  justify-self: center;
+  
+  @media screen and (max-width: 1000px) {
+    width: 90%
+  }
+`
 
-  &:hover {
-    transform: scale(1.02) translateY(0.1rem);
+const IconContainerStyles = css`
+  margin-top: 2rem;
+  & svg {
+    font-size: 4rem;
+    color: #8B80C6;
+    transition:all 0.3s ease;
+    opacity:0.65;
+    &:hover {
+      color: #8B80C6;
+      opacity:1;
+    }
   }
 `;
 
-const LinksContainerStyles = css`
-  font-size: 2rem;
-  padding: 1rem 1.5rem;
-  cursor: pointer;
-  color: #493e8b;
-
-  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    font-size: 3.5rem;
-  }
-
-  @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
-    padding: 0;
-  }
-
-  @media only screen and (max-width: 412px) and (max-height: 869px) and (-webkit-device-pixel-ratio: 3.5) {
-    padding: 0;
-  }
-
-  @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-    padding: 0;
-  }
-
-  @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
-    padding: 0;
-  }
-
-  @media screen and (max-width: 320px) {
-    padding: 0;
-  }
-`;
 
 export const HomePageContainer = styled.div`
   display: flex;
@@ -94,7 +79,7 @@ export const FirstNameContainer = styled.h1`
   }
 
   @media screen and (max-width: 320px) {
-    margin 0;
+    margin: 0;
   }
 `;
 
@@ -111,7 +96,7 @@ export const LastNameContainer = styled.h1`
   }
 
   @media screen and (max-width: 320px) {
-    margin 0;
+    margin: 0;
   }
 `;
 
@@ -138,7 +123,7 @@ export const ProfessionName = styled.h1`
   }
 
   @media screen and (max-width: 320px) {
-    margin 1rem 0 0 0 ;
+    margin: 1rem 0 0 0 ;
     font-size: 2rem;
   }
 `;
@@ -176,270 +161,24 @@ export const RocketContainer = css`
 `;
 
 export const RocketHomeContainer = styled.img`
-  ${RocketContainer}
+  ${RocketContainer};
   width: 30rem;
   height: auto;
 `;
 
 export const FooterContainer = styled.footer`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 5rem);
-
-  width: 22%;
-  border-top: 0.1rem solid #493e8b;
-  font-size: 5rem;
-  opacity: 0.9;
-  margin: 0;
-
-  @media screen and (min-width: 1900px) {
-    width: 15%;
-  }
-
-  @media screen and (max-width: 1200px) {
-    width: 25%;
-  }
-
-  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    width: 50%;
-    grid-gap: 2rem;
-  }
-
-  @media screen and (max-width: 900px) {
-    width: 40%;
-  }
-
-  @media screen and (max-width: 425px) {
-    width: 80%;
-  }
-
-  @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
-    width: 90%;
-  }
-
-  @media only screen and (max-width: 412px) and (max-height: 869px) and (-webkit-device-pixel-ratio: 3.5) {
-    width: 80%;
-  }
-
-  @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-    width: 80%;
-  }
-
-  @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
-    width: 90%;
-  }
-  @media screen and (max-width: 320px) {
-    width: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  @media screen and (max-width: 500px) {
+    gap: 1.3rem;
   }
 `;
 
-export const LinkedInLink = styled(Link)`
-  ${LinksContainerStyles}
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  justify-self: end;
+export const IconContainer = styled(Link)`
+  ${IconContainerStyles};
+`
 
-  transition: all 0.05s;
-
-  ${TransitionEffectStyles}
-
-  @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
-    margin-right: 1rem;
-    margin-top: 1rem;
-  }
-
-  @media only screen and (max-width: 412px) and (max-height: 869px) and (-webkit-device-pixel-ratio: 3.5) {
-    margin-right: 1rem;
-    margin-top: 1rem;
-  }
-
-  @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-    margin-right: 1rem;
-    margin-top: 1rem;
-  }
-
-  @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
-    margin-right: 1rem;
-    margin-top: 1rem;
-  }
-
-  @media screen and (max-width: 320px) {
-    margin-right: 1rem;
-    margin-top: 1rem;
-  }
-`;
-
-export const GitHubLink = styled(Link)`
-  ${LinksContainerStyles}
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  justify-self: start;
-
-  ${TransitionEffectStyles}
-
-  @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
-    margin-left: 1rem;
-    margin-top: 1rem;
-  }
-
-  @media only screen and (max-width: 412px) and (max-height: 869px) and (-webkit-device-pixel-ratio: 3.5) {
-    margin-left: 1rem;
-    margin-top: 1rem;
-  }
-
-  @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-    margin-left: 1rem;
-    margin-top: 1rem;
-  }
-
-  @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
-    margin-left: 1rem;
-    margin-top: 1rem;
-  }
-
-  @media screen and (max-width: 320px) {
-    margin-right: 1rem;
-    margin-top: 1rem;
-  }
-`;
-
-export const PhoneNumberContainer = styled.a`
-  ${LinksContainerStyles}
-  padding : 1rem 0;
-  margin-right: 3rem;
-
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  justify-self: end;
-
-  ${TransitionEffectStyles}
-`;
-
-export const PhoneLogoContainer = styled.a`
-  ${LinksContainerStyles}
-  padding : 1rem 0;
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  justify-self: start;
-`;
-
-export const EmailContainer = styled.a`
-  font-size: 1.8rem;
-  padding: 1rem;
-  cursor: pointer;
-  color: #493e8b;
-
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  justify-self: center;
-  align-self: center;
-
-  ${TransitionEffectStyles}
-
-  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    font-size: 3rem;
-  }
-
-  @media screen and (max-width: 900px) {
-    font-size: 1.8rem;
-  }
-
-  @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
-    font-size: 1.8rem;
-  }
-
-  @media only screen and (max-width: 412px) and (max-height: 869px) and (-webkit-device-pixel-ratio: 3.5) {
-    font-size: 1.8rem;
-  }
-
-  @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-    font-size: 1.8rem;
-    align-self: start;
-  }
-
-  @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
-    font-size: 1.8rem;
-  }
-`;
-
-export const FacebookLink = styled(Link)`
-  ${LinksContainerStyles}
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 5;
-  justify-self: end;
-
-  transition: all 0.05s;
-
-  ${TransitionEffectStyles}
-
-  @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
-    margin-right: 1rem;
-    margin-top: 1rem;
-  }
-
-  @media only screen and (max-width: 412px) and (max-height: 869px) and (-webkit-device-pixel-ratio: 3.5) {
-    margin-right: 1rem;
-    margin-top: 1rem;
-  }
-
-  @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-    margin-right: 1rem;
-    margin-top: 1rem;
-  }
-
-  @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
-    margin-right: 1rem;
-    margin-top: 1rem;
-  }
-
-  @media screen and (max-width: 320px) {
-    margin-right: 1rem;
-  }
-`;
-
-export const InstagramLink = styled(Link)`
-  ${LinksContainerStyles}
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 4;
-  grid-row-end: 5;
-  justify-self: start;
-
-  ${TransitionEffectStyles}
-
-  @media only screen and (max-width: 414px) and (max-height: 896px) and (-webkit-device-pixel-ratio: 3) {
-    margin-left: 1rem;
-    margin-top: 1rem;
-  }
-
-  @media only screen and (max-width: 412px) and (max-height: 869px) and (-webkit-device-pixel-ratio: 3.5) {
-    margin-left: 1rem;
-    margin-top: 1rem;
-  }
-
-  @media only screen and (max-width: 375px) and (max-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-    margin-left: 1rem;
-    margin-top: 1rem;
-  }
-
-  @media only screen and (max-width: 360px) and (max-height: 760px) and (-webkit-device-pixel-ratio: 4) {
-    margin-left: 1rem;
-    margin-top: 1rem;
-  }
-
-  @media screen and (max-width: 320px) {
-    margin-right: 1rem;
-  }
-`;
+export const IconContainerA = styled.a`
+  ${IconContainerStyles};
+`
