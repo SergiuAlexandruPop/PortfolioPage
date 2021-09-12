@@ -22,15 +22,7 @@ const ModifiedHeader = () => {
           <span>AboutMe</span>
         </OptionLink>
         <OptionLink to="/blog">Blog</OptionLink>
-        <OptionLink
-          to={{
-            pathname:
-              "https://drive.google.com/file/d/12m8FtN_igh1Pidh8e9fxMQbh3N66RTOV/view",
-          }}
-          target="_blank"
-        >
-          Résumé
-        </OptionLink>
+        <OptionLink to="/resume">Résumé</OptionLink>
         <OptionLink to="/portfolio">Portofolio</OptionLink>
       </OptionsContainer>
     </HeaderContainer>

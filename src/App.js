@@ -14,6 +14,9 @@ const Portfolio = lazy(() =>
 const MainBlogPage = lazy(() =>
   import("./components/blog/mainBlogPage/mainBlogPage.component")
 );
+const Resume = lazy(() =>
+  import("./components/resume/resume.component")
+);
 const FirstPost = lazy(() =>
   import("./components/blog/blogPosts/FirstPost/FirstPost.component")
 );
@@ -35,6 +38,7 @@ function App() {
             <Route exact path="/aboutme" component={AboutMe} />
             <Route exact path="/portfolio" component={Portfolio} />
             <Route exact path="/blog" component={MainBlogPage} />
+            <Route exact path="/resume" component={Resume} />
             <Route exact path="/First-Post" component={FirstPost} />
             <Route exact path="/Who-am-I" component={WhoAmI} />
             <Route exact path="/learn-front-end" component={LearnFrontEnd} />
