@@ -5,15 +5,17 @@ import React from "react";
 
 
 import ModifiedHeader from "../modifiedHeader/modifiedHeader.component";
-import {DownloadLink, ResumeContainer} from "./resume.styles";
+import {Blockquote, DownloadLink, ResumeContainer} from "./resume.styles";
 
 
 const Resume = () => {
 
-
   return (
     <>
       <ModifiedHeader/>
+      <Blockquote>
+        ⚠️ For clickable links download the pdf version
+      </Blockquote>
       <DownloadLink to={downloadResume} target="_blank" download="Sergiu's Resume">Download résumé</DownloadLink>
       <ResumeContainer src={resume} alt="resume"/>
     </>

@@ -54,7 +54,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const RocketModifiedHeaderContainer = styled.img`
-  ${RocketContainer}
+  ${RocketContainer};
   width: 7rem;
   height: auto;
 
@@ -126,6 +126,7 @@ export const OptionLink = styled(Link)`
   padding: 1rem 1.5rem;
   cursor: pointer;
   color: black;
+  white-space: nowrap;
 
   transition: all 0.2s ease-in-out;
 

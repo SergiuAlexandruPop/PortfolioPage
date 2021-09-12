@@ -19,7 +19,7 @@ const ModifiedHeader = () => {
 
       <OptionsContainer>
         <OptionLink to="/aboutme">
-          <span>AboutMe</span>
+          <span>About me</span>
         </OptionLink>
         <OptionLink to="/blog">Blog</OptionLink>
         <OptionLink to="/resume">Résumé</OptionLink>

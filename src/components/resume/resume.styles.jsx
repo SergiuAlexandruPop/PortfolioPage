@@ -14,7 +14,7 @@ export const ResumeContainer = styled.img`
 export const DownloadLink = styled(Link)`
   display: flex;
   align-items: center;
-  margin: 8rem auto 0 auto;
+  margin: 3rem auto 0 auto;
   font-size: 1.65rem;
   width: 20rem;
   height: 4.5rem;
@@ -28,16 +28,34 @@ export const DownloadLink = styled(Link)`
   opacity: 0.8;
   border: none;
   color: white;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
     opacity: 1;
   }
 
+  -webkit-tap-highlight-color: transparent;
+  
   &:focus {
-    outline: none;
+    transform: scale(105%);
   }
 
   @media screen and (max-width: 500px) {
     width: 15rem;
+    margin: 0 auto;
+  }
+`
+
+export const Blockquote = styled.blockquote`
+  padding: 15px 24px;
+  border-left: 5px solid #ffe564;
+  background-color: rgba(255,229,100,0.2);
+  font-family: "Open Sans Condensed";
+  font-size: 1.65rem;
+  margin-top: 6rem;
+  
+  @media screen and (max-width: 500px) {
+    margin-top: 4rem;
+    margin-bottom: 0.7rem;
   }
 `

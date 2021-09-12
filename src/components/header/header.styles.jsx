@@ -6,11 +6,9 @@ export const OptionsContainer = styled.div`
   justify-self: center;
   justify-content: center;
   align-content: center;
-  align-content: center;
   align-self: center;
   height: 3.5rem;
   width: 40%;
-  display: flex;
   cursor: pointer;
   font-size: 2rem;
 
@@ -85,6 +83,7 @@ export const OptionLink = styled(Link)`
   color: #ffffff;
   justify-self: stretch;
   align-self: center;
+  white-space: nowrap;
 
   transition: all 0.2s ease;
 
