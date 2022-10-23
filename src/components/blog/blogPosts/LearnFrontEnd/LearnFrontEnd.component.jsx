@@ -16,7 +16,7 @@ const LearnFrontEnd = () => {
       <BodyContainer>
         <PostContainer>
           <ParagraphContainer>
-            <p>21.07.2021</p>
+            <p>22.10.2022</p>
             <ImportantSideNote>
               This is only my personal, subjective and based on my experience way of doing it. I'm not saying is the
               best way, but I'm sure it's not the worst.
