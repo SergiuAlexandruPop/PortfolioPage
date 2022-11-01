@@ -6,7 +6,6 @@ import Header from "../header/header.component";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import CallIcon from '@material-ui/icons/Call';
 import MailIcon from '@material-ui/icons/Mail';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Divider from '@material-ui/core/Divider';
@@ -60,11 +59,11 @@ function HomePage() {
                        target="_blank">
           <GitHubIcon/>
         </IconContainer>
-        <Tooltip title='0747016558' classes={{tooltip: classes.tooltip}}>
-          <IconContainerA href="tel:0747016558">
-            <CallIcon/>
-          </IconContainerA>
-        </Tooltip>
+        {/*<Tooltip title='0747016558' classes={{tooltip: classes.tooltip}}>*/}
+        {/*  <IconContainerA href="tel:0747016558">*/}
+        {/*    <CallIcon/>*/}
+        {/*  </IconContainerA>*/}
+        {/*</Tooltip>*/}
         <Tooltip title='sergiualexandrupop@gmail.com' classes={{tooltip: classes.tooltip}}>
           <IconContainerA href="mailto: sergiualexandrupop@gmail.com">
             <MailIcon/>
