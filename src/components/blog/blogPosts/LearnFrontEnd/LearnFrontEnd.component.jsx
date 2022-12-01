@@ -5,9 +5,8 @@ import {PostContainer} from "../generalStyles.styles";
 import {
   BodyContainer,
   ParagraphContainer,
-  ImportantSideNote, ListContainer, VideoContainer, ResourceTitle,
+  ImportantSideNote, ListContainer, VideoContainer, ResourceTitle, Divider,
 } from "./LearnFrontEnd.styles";
-import {GeneralLink} from "../FirstPost/FirstPost.styles";
 
 const LearnFrontEnd = () => {
   return (
@@ -16,12 +15,12 @@ const LearnFrontEnd = () => {
       <BodyContainer>
         <PostContainer>
           <ParagraphContainer>
-            <p>22.10.2022</p>
+            <p>01.12.2022</p>
             <ImportantSideNote>
               This is only my personal, subjective and based on my experience way of doing it. I'm not saying is the
               best way, but I'm sure it's not the worst.
               I get 0 money from you following this. I'm only doing it because nobody did it for me.
-              I finished pharmacy at UMF Cluj and now I am 27 years old and have one year of web development experience.
+              I finished pharmacy at UMF Cluj and now I am 28 years old and have two years of web development experience.
               No matter what you did in the past, this can make you a developer.
             </ImportantSideNote>
             <p>
@@ -195,9 +194,9 @@ const LearnFrontEnd = () => {
             <p>
               - 5 hours of learning in a day is worse than 45 minutes of learning everyday for 5 days. Our brain can
               fully concentrate in a day for about 2 hours.
-              The rest is at 30-50% or autopilot. This was an important lesson I learned from <GeneralLink
+              The rest is at 30-50% or autopilot. This was an important lesson I learned from <ResourceTitle
               to={{pathname: "https://www.goodreads.com/book/show/25744928-deep-work"}}
-              target="_blank">Cal Newport's Deep Work</GeneralLink>
+              target="_blank">Cal Newport's Deep Work</ResourceTitle>
               . Even more than that, the human brain is very adaptable.
               But for it to adapt to a new way of thinking it needs constant exercise. In everything you do in life, if
               you want to get better in the fasted way possible,
@@ -207,9 +206,8 @@ const LearnFrontEnd = () => {
               - You must learn for at least 5 days a week. But if for some reason you have a very busy week and don't
               really feel like it, just make sure that
               you give your brain the daily dose. Just watch a 10 minute video on youtube. It's important to never break
-              the habit. I used
-              <GeneralLink to={{pathname: "https://www.youtube.com/channel/UCTBGXCJHORQjivtgtMsmkAQ"}}
-                           target="_blank">Steve Griffith</GeneralLink> videos on youtube for this.
+              the habit. I used <ResourceTitle to={{pathname: "https://www.youtube.com/channel/UCTBGXCJHORQjivtgtMsmkAQ"}}
+                           target="_blank">Steve Griffith</ResourceTitle> videos on youtube for this.
               The ideal day must be at least 40-60 minutes (the higher the better) of net time of learning. Do whatever
               you like. Long sessions with long brakes or short ones with short breaks.
             </p>
@@ -237,8 +235,9 @@ const LearnFrontEnd = () => {
             </p>
             <p>
               1. Make and account on <ResourceTitle
-              to={{pathname: "https://www.freecodecamp.org/learn/responsive-web-design/"}}
-              target="_blank">FreeCodeCamp</ResourceTitle> and start there. It's free. Stop after "CSS Grid".
+              to={{pathname: "https://www.freecodecamp.org/learn/2022/responsive-web-design/"}}
+              target="_blank">FreeCodeCamp</ResourceTitle> and start at "Learn HTML". It's free. Stop after "Learn Basic
+              CSS".
             </p>
             <ImportantSideNote>
               Regarding udemy courses. They are half of the time at a sale for 14-15$. You don't have to buy them
@@ -253,8 +252,7 @@ const LearnFrontEnd = () => {
             <p>
               2. Your first Udemy course is <ResourceTitle
               to={{pathname: "https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/"}}
-              target="_blank">The Complete Web Developer in 2021: Zero to
-              Mastery</ResourceTitle>.
+              target="_blank">The Complete Web Developer in 2023: Zero to Mastery</ResourceTitle>.
               Start from lesson 1 and stop after "Career Of A Web developer"
             </p>
             <p>
@@ -263,43 +261,52 @@ const LearnFrontEnd = () => {
               target="_blank">Build Responsive Real-World Websites with HTML and CSS</ResourceTitle>. Stop after
               "Layouts:
               Floats, Flexbox, and CSS Grid Fundamentals".
-              This is the minimum. If you want to go deeper then stop after "Omnifood Project – Responsive Web Design"
+              This is the minimum. If you want to go deeper(and I recommend you to spare two more weeks and do it) then
+              stop after "Omnifood Project – Responsive Web Design"
               but you can skip the "Web Design Rules and Framework".
             </p>
             <p>
-              4. Back to <ResourceTitle to={{pathname: "https://www.freecodecamp.org/learn/responsive-web-design/"}}
-                                        target="_blank">FreeCodeCamp</ResourceTitle>, start with Basic Javascript, stop
-              after ES6.
+              4. Back to <ResourceTitle
+              to={{pathname: "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"}}
+              target="_blank">FreeCodeCamp</ResourceTitle>, start with Basic Javascript, stop
+              after ES6. You don't need FreeCodeCamp after this but if you liked it a lot there are more things to learn
+              there, maybe take a look.
             </p>
             <p>
               5. And now we bring out the big guns. <ResourceTitle
               to={{pathname: "https://www.udemy.com/course/the-complete-javascript-course/"}}
-              target="_blank">The Complete JavaScript Course 2021: From Zero to
-              Expert!</ResourceTitle> .
-              Do all of it, but you can skip “Numbers, Dates, Intl and Timers”,” Advanced DOM and Events”.
+              target="_blank">The Complete JavaScript Course 2023: From Zero to Expert!</ResourceTitle>.
+              Do all of it.
               This is going to be hard. This is the core of what you'll work with for the rest of your life. It's the
               most complete course there is.
               A masterpiece. And the instructor is one of the best in the world. After this one, you're ready for an
               internship or if you're lucky, a job.
               But I don't recommend a job at this point. You still need to build that base of knowledge. But online
-              courses don't put food on the table so do as you wish.
+              courses don't put food on the table so do as you wish.<br/>
+              You can skip: “Numbers, Dates, Intl and Timers”, ”Advanced DOM and Events”<br/>
+              Skip everything else at your expense. I can't guarantee you that you'll understand what comes next if you
+              skip other parts of this.<br/>
+              <span>I know it's a lot of hours but this course is really the only hard challenge to overcome in order to become a junior web developer.</span>
             </p>
             <p>
               6. Return to <ResourceTitle
               to={{pathname: "https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/"}}
-              target="_blank">The Complete Web Developer in 2021: Zero to Mastery</ResourceTitle> and
-              continue. Stop after "NPM + NPM Scripts".
+              target="_blank">The Complete Web Developer in 2023: Zero to Mastery</ResourceTitle> and
+              continue. Stop after "FINAL PROJECT: SmartBrain Front-End".
             </p>
-            <p>
-              7. Next one on the list is <ResourceTitle
-              to={{pathname: "https://www.udemy.com/course/coding-interview-bootcamp-algorithms-and-data-structure/"}}
-              target="_blank">The Coding Interview bootcamp: Algorithms + Data
-              Structures</ResourceTitle>.
-              You can stop after "Runtime Complexity in Practice - Fibonacci". This will test your javascript logical
-              thinking.
-              It's the most enjoyable course in this list. Fun and easy.
-              The algorithms you see here are used all day at work and can be asked at the interview.
-            </p>
+            <ImportantSideNote>
+              Now you got a taste of React.js and how a real web application is made. You learned until here what 90% of
+              2 months internships teach you.
+              If you are able to explain the code from the final project to a interviewer and know the answers to his
+              other questions, you get the job.
+              You can start to make interview questions and apply to jobs or internships. BUT! If you want to become one
+              of the best junior developers in your company
+              and get 1 year of experience in another 1-2 months, CONTINUE! Even if you get a job, one hour a day, DO
+              what's next here!
+            </ImportantSideNote>
+
+            <Divider/>
+
             <ImportantSideNote>
               If you are here, you can contact me for guidance. I made a facebook messenger private group with people
               who learn programming.
@@ -313,44 +320,63 @@ const LearnFrontEnd = () => {
               are 1-2 months away of getting a job, and none of them had any programing background or collage. Really
               proud of them.
             </ImportantSideNote>
+            <p>
+              7. Next one on the list is <ResourceTitle
+              to={{pathname: "https://www.udemy.com/course/coding-interview-bootcamp-algorithms-and-data-structure/"}}
+              target="_blank">The Coding Interview bootcamp: Algorithms + Data
+              Structures</ResourceTitle>.
+              You can stop after "Runtime Complexity in Practice - Fibonacci". This will test your javascript logical
+              thinking.
+              It's the most enjoyable course in this list. Fun and easy.
+              The algorithms you see here are used all day at work and can be asked at the interview.
+            </p>
             <ImportantSideNote>
-              It's time to start learning a front-end framework.
-              The reason I recommend React.js is that at the time I write this, it's much much bigger than all the
-              others worldwide.
+              Let's go deep in a frontend framework.
+              The reason I recommend React.js is that at the time I write this, it's 5 times bigger than the next
+              two(Angular and Vue) combined.
               It's the easiest way to find a job.
             </ImportantSideNote>
             <p>
               8. Start with <ResourceTitle
               to={{pathname: "https://www.udemy.com/course/react-redux/"}}
-              target="_blank">Modern React with Redux</ResourceTitle>. Stephen Grider is one of the best
+              target="_blank">Modern React with Redux [2023 Update]</ResourceTitle>. Stephen Grider is one of the best
               for theory understanding.
-              Start from lesson 0 and stop after "REST-Based React Apps". Some of the videos require multiple views. I
+              Do all of it. Some of the videos require multiple views. I
               recommend you don't skip a lesson without understanding it
-              because nothing will make any sense shortly in this way.
+              because nothing will make any sense shortly in this way. The course has been fully remade in the last part
+              in 2022 and it's a masterpiece.
+              It's about 30 hours but the content is incredible. He covers a lot of high end and modern topics.
             </p>
+            <ImportantSideNote>
+              Now you know React better than most junior developers. You just need to rewatch what you didn't fully
+              understand. And it will come to you as a surprise
+              when I tell you do one more React.js course. That's because this guide it's not about making you a
+              mediocre or average developer, but a great one.
+              You learned so far all the theory of a React.js application, but the only thing that's missing is
+              understanding how to scale a React app similar to
+              the ones at the job. The next course teaches you exactly that.
+            </ImportantSideNote>
             <p>
-              9. There is one more step for becoming a great junior developer. <ResourceTitle
+              9. <ResourceTitle
               to={{pathname: "https://www.udemy.com/course/complete-react-developer-zero-to-mastery/"}}
-              target="_blank">Complete React Developer
-              in 2021 (w/ Redux, Hooks, GraphQL)</ResourceTitle>.
-              Stop after "Bonus: Progressive Web App" but without "GraphQL + Apollo". This course is hands down the one
+              target="_blank">Complete React Developer in 2023 (w/ Redux, Hooks, GraphQL)</ResourceTitle>.
+              You can start at "Capstone Project: Intro + Setup".
+              This course is hands down the one
               that will make you not only a junior developer,
-              but a really really good junior developer and will build a base that will help you even when you have 1-2
-              years experience.
-              It has a lot of important concepts in it but it's hard, that's why it's at the end. You'll
-              build <ResourceTitle
-              to={{pathname: "https://sergiu-clothing-app.herokuapp.com/"}}
-              target="_blank">this
-              big website</ResourceTitle> that will put everything you learned so far in perspective.
+              but a really really good junior developer and will build a base that will help you even when you have 2
+              years of experience.
+              It has a lot of important concepts in it but it's hard, that's why it's at the end.
               This one made me realise I was just an unmade puzzle and put all the pieces in my head together.
               I think I watched it 3 times and everytime I learned something new.
               The reason why I made you do the Grider one first is because this course is not for absolute beginners in
               React.js.
             </p>
             <br/>
+            <Divider class="dashed"/>
             <br/>
             <p>
-              This is it. You made it. You are now a web developer. But I'm sorry to say that for at least the next 5
+              This is it. You made it. You are now a great web developer. But I'm sorry to say that for at least the
+              next 5
               years you still have to learn things.
               If you stop learning you will forever stay a junior or best case scenario a mid developer. It would be a
               shame if you came this far only to miss greatness.
@@ -359,94 +385,199 @@ const LearnFrontEnd = () => {
             <p>
               <b>Disclaimer: All the resources I gave you above I tested on me on my journey. I did all of those + a lot
                 more in about 9 months.
-                After that I made a path that I wish somebody gave me at the beginning because I wasted at least 3
-                months with poor resources.</b>
+                After that, I made a path that I wish somebody gave me at the beginning because I wasted at least 3
+                months with poor resources. I invested about 30 hours in making this path make sense and be the fastest,
+                cheapest and most perfect path there is out there.
+
+              </b>
             </p>
             <p>
-              After every technology learned (css, javascript, react) I suggest to search on google or youtube for
-              interview questions.
+              After every technology learned (css, javascript, react),
+              or even after every big chapter in any technology, I strongly suggest you to search on google or youtube
+              for
+              interview questions. <b>Only when doing interview questions the information gets remembered perfectly</b>.
               It will show you your weaknesses and where you need to improve yourself. It will also prepare you for your
               interview but if you finish all
               of these courses that interview will be the easiest thing in all of this process. I'll leave some
               resources here :<br/>
               - <ResourceTitle
               to={{pathname: "https://www.edureka.co/blog/interview-questions/top-50-html-interview-questions-and-answers/"}}
-              target="_blank">Top 50 HTML Interview Questions and Answers</ResourceTitle><br/>
+              target="_blank">Top 50 HTML Interview Questions and Answers in 2023
+            </ResourceTitle>
+              <br/>
               - <ResourceTitle
               to={{pathname: "https://www.edureka.co/blog/interview-questions/css-interview-questions/"}}
-              target="_blank">Top 50 CSS Interview Questions You Should Prepare For In 2021</ResourceTitle><br/>
+              target="_blank">Top 50 CSS Interview Questions You Should Prepare For In 2023
+            </ResourceTitle>
+              <br/>
               - <ResourceTitle
               to={{pathname: "https://www.edureka.co/blog/interview-questions/javascript-interview-questions/"}}
-              target="_blank">Top 50 JavaScript Interview Questions You Must Prepare in 2021</ResourceTitle><br/>
+              target="_blank">Top 50 JavaScript Interview Questions You Must Prepare in 2023
+            </ResourceTitle>
+              <br/>
               - <ResourceTitle
-              to={{pathname: "Top 50 React Interview Questions You Must Prepare In 2021"}}
-              target="_blank">Top 50 React Interview Questions You Must Prepare in 2021</ResourceTitle><br/>
-              - <ResourceTitle
-              to={{pathname: "https://frontendmasters.com/books/front-end-handbook/2018/practice/interview-q.html"}}
-              target="_blank">Front-End Interviews from FrontEndMasters</ResourceTitle><br/>
+              to={{pathname: "https://www.edureka.co/blog/interview-questions/react-interview-questions/"}}
+              target="_blank">Top 50 React Interview Questions You Must Prepare in 2023
+            </ResourceTitle>
+              <br/>
               - <ResourceTitle
               to={{pathname: "https://github.com/lydiahallie/javascript-questions"}}
-              target="_blank">Javascript Questions</ResourceTitle><br/>
+              target="_blank">Javascript Questions
+            </ResourceTitle>
+              <br/>
+              - <ResourceTitle
+              to={{pathname: "https://frontendmasters.com/books/front-end-handbook/2018/practice/interview-q.html"}}
+              target="_blank">Front-End Interviews from FrontEndMasters
+            </ResourceTitle>
+              <br/>
               - <ResourceTitle
               to={{pathname: "https://zerotomastery.io/resources/"}}
-              target="_blank">ZeroToMastery Resources</ResourceTitle><br/>
+              target="_blank">ZeroToMastery Resources
+            </ResourceTitle>
+              <br/>
+              <br/>
+              <Divider/>
+              <br/>
+              <p>
+                <b>
+                  Because I finished medical school and I have a passion for how the human body works, I'll give you here some tips on how
+                  to learn everything better and how to memorise everything much better. The information it's from the greatest <ResourceTitle
+                  to={{pathname: "https://hubermanlab.com/"}}
+                  target="_blank">Andrew Huberman
+                </ResourceTitle>
+                  , the most influential
+                  figure in the health community in 2022. I suggest you read all his newsletters articles because they are short and life changing.
+                  You won't be the same after those. Also start listening to his podcasts. Using the information he provides it's like living life
+                  with cheat codes. <br/>
+
+                  <br/>
+                  <br/>
+                  <span>
+                    - Here is the best resource you'll find out there for how to learn better: <ResourceTitle
+                    to={{pathname: "https://hubermanlab.com/teach-and-learn-better-with-a-neuroplasticity-super-protocol/"}}
+                    target="_blank">NEUROPLASTICITY SUPER-PROTOCOL
+                </ResourceTitle>
+                  </span>
+
+                  <br/>
+                  <br/>
+                  <span>
+                    - But you can't learn well without a good night's sleep: <ResourceTitle
+                    to={{pathname: "https://hubermanlab.com/toolkit-for-sleep/"}}
+                    target="_blank">Toolkit for Sleep
+                </ResourceTitle>
+                  </span>
+
+                  <br/>
+                  <br/>
+                  <span>
+                    - The most important thing for learning after sleep is working out, here's how you do it 1 hour a day for the best results: <ResourceTitle
+                    to={{pathname: "https://hubermanlab.com/foundational-fitness-protocol/"}}
+                    target="_blank">Foundational Fitness Protocol
+                </ResourceTitle>
+                  </span>
+
+                  <br/>
+                  <br/>
+                  <span>
+                    - If you struggle with the habbit of staying that 1-2 hours a day of learning programming: <ResourceTitle
+                    to={{pathname: "https://hubermanlab.com/build-or-break-habits-using-science-based-tools/"}}
+                    target="_blank">Build or Break Habits Using Science-Based Tools
+                </ResourceTitle>
+                  </span>
+
+                  <br/>
+                  <br/>
+                  <span>
+                    - If you don't feel motivated enough to keep learning how to code: <ResourceTitle
+                    to={{pathname: "https://hubermanlab.com/tools-to-manage-dopamine-and-improve-motivation-and-drive/"}}
+                    target="_blank">Tools to Manage Dopamine and Improve Motivation & Drive
+                </ResourceTitle>
+                  </span>
+
+                  <br/>
+                  <br/>
+                  <span>
+                    - If you don't know how to make your workspace be more productive and you find yourself lose focus: <ResourceTitle
+                    to={{pathname: "https://hubermanlab.com/5-science-based-steps-to-improve-your-workspace/"}}
+                    target="_blank">5 Science-Based Steps to Improve Your Workspace
+                </ResourceTitle>
+                  </span>
+
+                </b>
+              </p>
             </p>
             <br/>
             <br/>
-            <div style={{border: '1px solid grey'}}></div>
+            <Divider/>
             <br/>
             <br/>
             <p>
-              I'm going to also leave here what I think are the best things to learn <b>AFTER</b> you get hired for you to become a better developer:
+              I'm going to also leave here what I think are the best things to learn <b>AFTER</b> you get hired for you
+              to become a better developer:
             </p>
             <p>
               <ResourceTitle
                 to={{pathname: "https://www.udemy.com/course/advanced-css-and-sass/"}}
-                target="_blank">- Advanced CSS and Sass: Flexbox, Grid, Animations and More!</ResourceTitle> : Only what you don't already know<br/>
+                target="_blank">- Advanced CSS and Sass: Flexbox, Grid, Animations and More!</ResourceTitle> : Only what
+              you don't already know<br/>
               <ResourceTitle
                 to={{pathname: "https://www.udemy.com/course/writing-clean-code/"}}
-                target="_blank">- Clean Code</ResourceTitle> : The quality of the code is something that will take years to develop. Here is some help<br/>
+                target="_blank">- Clean Code</ResourceTitle> : The quality of the code is something that will take years
+              to develop. Here is some help<br/>
               <ResourceTitle
                 to={{pathname: "https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/"}}
-                target="_blank">- React and Typescript: Build a Portfolio Project</ResourceTitle>: Typescript is becoming a standard so it's best to know it<br/>
+                target="_blank">- React and Typescript: Build a Portfolio Project</ResourceTitle>: Typescript is
+              becoming a standard so it's best to know it<br/>
               <ResourceTitle
                 to={{pathname: "https://www.udemy.com/course/implement-high-fidelity-designs-with-material-ui-and-reactjs/"}}
-                target="_blank">- Implement High Fidelity Designs with Material-UI and ReactJS</ResourceTitle>: Material UI it's a great tool to build fast front-end components<br/>
+                target="_blank">- Implement High Fidelity Designs with Material-UI and ReactJS</ResourceTitle>: Material
+              UI it's a great tool to build fast front-end components<br/>
               <ResourceTitle
                 to={{pathname: "Jhttps://www.udemy.com/course/advanced-javascript-concepts/"}}
-                target="_blank">- JavaScript: The Advanced Concepts (2021)</ResourceTitle> : This will give you a great recap of all that you forgot and dive even deeper into javascript. Great great course<br/>
+                target="_blank">- JavaScript: The Advanced Concepts (2021)</ResourceTitle> : This will give you a great
+              recap of all that you forgot and dive even deeper into javascript. Great great course<br/>
               <ResourceTitle
                 to={{pathname: "https://www.udemy.com/course/learning-to-learn-efficient-learning-zero-to-mastery/"}}
-                target="_blank">- Learning to Learn [Efficient Learning]: Zero to Mastery</ResourceTitle> : Not web related but very well done<br/>
+                target="_blank">- Learning to Learn [Efficient Learning]: Zero to Mastery</ResourceTitle> : Not web
+              related but very well done<br/>
               <ResourceTitle
                 to={{pathname: "https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery/"}}
-                target="_blank">- Complete Web & Mobile Designer in 2021: UI/UX, Figma, +more</ResourceTitle> : This is extra extra,
-              maybe do it after 1 year of working or more but it will make you understand how a user wants a website to be delivered.<br/>
+                target="_blank">- Complete Web & Mobile Designer in 2021: UI/UX, Figma, +more</ResourceTitle> : This is
+              extra extra,
+              maybe do it after 1 year of working or more but it will make you understand how a user wants a website to
+              be delivered.<br/>
             </p>
             <br/>
-            <div style={{border: '1px solid grey'}}></div>
+            <Divider/>
             <br/>
             <p>
               Now let's start the full stack journey of a web developer. I only recommend starting this after 1
               year of working. After you learn this you will be able to make a website front to back: <br/>
               <ResourceTitle
                 to={{pathname: "https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/"}}
-                target="_blank">- Node.js, Express, MongoDB & More: The Complete Bootcamp 2021</ResourceTitle> : The best course on Node.js for beginners<br/>
+                target="_blank">- Node.js, Express, MongoDB & More: The Complete Bootcamp 2021</ResourceTitle> : The
+              best course on Node.js for beginners<br/>
               <ResourceTitle
                 to={{pathname: "https://www.udemy.com/course/react-node-ecommerce/"}}
-                target="_blank">- MERN Stack React Node Ecommerce from Scratch to Deployment</ResourceTitle> : Combine everything together<br/>
+                target="_blank">- MERN Stack React Node Ecommerce from Scratch to Deployment</ResourceTitle> : Combine
+              everything together<br/>
               <ResourceTitle
                 to={{pathname: "https://www.udemy.com/course/sql-and-postgresql/"}}
-                target="_blank">- SQL and PostgreSQL: The Complete Developer's Guide</ResourceTitle> : Because the previous ones used a relational database(MongoDB),
-              this course is a must for a full stack developer because it's about SQL databases, the second cool kid at the block<br/>
+                target="_blank">- SQL and PostgreSQL: The Complete Developer's Guide</ResourceTitle> : Because the
+              previous ones used a relational database(MongoDB),
+              this course is a must for a full stack developer because it's about SQL databases, the second cool kid at
+              the block<br/>
               <ResourceTitle
                 to={{pathname: "https://www.udemy.com/course/the-complete-junior-to-senior-web-developer-roadmap/"}}
-                target="_blank">- The Complete Junior to Senior Web Developer Roadmap (2021)</ResourceTitle> : It's hard to become a senior developer. Some never do.
+                target="_blank">- The Complete Junior to Senior Web Developer Roadmap (2021)</ResourceTitle> : It's hard
+              to become a senior developer. Some never do.
               But here is a roadmap of what you need to pay attention to in the following years.<br/>
             </p>
             <br/>
             <p>
-              Never stop learning. Take one day at a time. Do what you do with passion. Focus only on the present and live your life. At the end of the day, nothing else matters
+              Never stop learning. Take one day at a time. Do what you do with passion. Focus only on the present and
+              live your life. At the end of the day, nothing else matters
             </p>
 
 

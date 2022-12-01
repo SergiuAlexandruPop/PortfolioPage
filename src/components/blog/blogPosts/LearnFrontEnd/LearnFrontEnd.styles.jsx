@@ -36,13 +36,20 @@ export const ParagraphContainer = styled.div`
     line-height: 1.6;
     color: #3a3f3f;
     letter-spacing: 0.4px;
-    font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman",
-    Times, serif;
+    font-family: 'Roboto', sans-serif;
   }
 `;
 
-export const ImportantSideNote = styled.h3`
-  color: #ed1749;
+export const ImportantSideNote = styled.div`
+  margin: 1.5rem 0;
+  line-height: 2.5rem;
+  color: #d31541;
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+`;
+
+export const Divider = styled.hr`
+  width: 100%;
 `;
 
 export const ListContainer = styled.li`
@@ -52,8 +59,7 @@ export const ListContainer = styled.li`
   line-height: 1.6;
   color: #3a3f3f;
   letter-spacing: 0.4px;
-  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman",
-  Times, serif;
+  font-family: 'Roboto', sans-serif;
 `;
 
 export const VideoContainer = styled.iframe`
@@ -66,11 +72,13 @@ export const ResourceTitle = styled(Link)`
   font-size: 1.7rem;
   font-weight: 500;
   line-height: 1.6;
-  color: #6558ad;
   letter-spacing: 0.4px;
   text-decoration-line: underline;
-  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman",
-  Times, serif;
+  font-family: 'Roboto', sans-serif;
+  color: #577baa;
+  :hover {
+    color: #01ADEF;
+  }
 `
 
 export const GeneralLink = styled(Link)`
@@ -79,6 +87,5 @@ export const GeneralLink = styled(Link)`
   color: #6558ad;
   letter-spacing: 0.4px;
   text-decoration-line: underline;
-  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman",
-  Times, serif;
+  font-family: 'Roboto', sans-serif;
 `;
