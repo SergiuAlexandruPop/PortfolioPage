@@ -45,7 +45,7 @@ const LearnFrontEnd = () => {
               you learned in the past week.
             </p>
             <p>
-              - All you need is basic english, any laptop, freeCodeCamp.org and some Udemy courses(list in long
+              - All you need is basic english, any 400 euros+ laptop(the bigger the screen the better), a monitor(optional), freeCodeCamp.org and some Udemy courses(list in long
               version).
             </p>
             <p>
@@ -65,14 +65,31 @@ const LearnFrontEnd = () => {
             <p>
               - Budget: about 60 euros.
             </p>
+            <p style={{ border: '1px solid #d3d3d3', padding: '1rem'}}>
+              <b>
+                - You'll learn here much much more than any on site, 5 months, 4 hours/week, programing school that costs 500-2000 euros.
+                They move so fast and they teach so bad that 90% of students get out the same way they got in, knowing nothing.
+                What they do in those schools is that a programmer with some years of experience at the job and maybe 0 experience teaching keeps a lecture
+                about something and then tells you to learn 2-3 hours/day at home. And they are right! If you learn 2-3 hours/day at home for 5 months you
+                will for sure become a web developer. But why pay huge amounts of money when you can do it for 60 euros and be lectured by the best in the world
+                ?
+                <br/>
+                - My advice, is to start learning with this guide, give it 3-4 months and THEN go for clarifications at those schools if you really really want to. They are ok if you already know the information
+                and you want to fix it in your head, but they are not efficient in teaching from scratch.
+                <br/>
+                <span style={{ textDecoration: 'underline'}}>- And their diploma has 0 value. It's only about what you know.</span>
+                <br/>
+                - This is just my opinion, at the end of the day it's your time and money. You do as you wish with it!
+              </b>
+            </p>
             <br/>
             <br/>
             <h3>Long version: </h3>
             <ImportantSideNote>
               I really hate all those who say online that you can learn everything in 2 months just a little bit of
               everything and you are a web developer.
-              Yes you can learn a little bit of everything and then be useless for a company if they don't spend 3-6
-              months on learning you things.
+              Yes you can learn a little bit of everything and then be useless if a company doesn't spend 3-6
+              months on learning you things, and even after that you'll have so many gaps that it'll take you 1-2 years to fill them.
               This will be a step by step from 0 lines of code seen to making a small website on your own (I made this
               website just for fun at the end with what I learned).
               This path gives you a really
@@ -83,13 +100,13 @@ const LearnFrontEnd = () => {
               Let's start with false myths:
             </p>
             <ul>
-              <ListContainer>You have to be good at math - Literally addition of a+ b is the only thing you
+              <ListContainer>You have to be good at math. - Literally addition of a+ b is the only thing you
                 need for front-end development</ListContainer>
-              <ListContainer>You must have an IT background in highschool</ListContainer>
+              <ListContainer>You must have an IT background in highschool. - I didn't know how to write a single line of code.</ListContainer>
               <ListContainer>You'll ruin your eye sight in time from the computer screen - You'll ruin it from netflix
                 too if
                 you don't
-                take breaks
+                take breaks.
               </ListContainer>
               <ListContainer>You have to be very smart - Those who are smart make google and tesla but they are the
                 exception, not
@@ -216,8 +233,7 @@ const LearnFrontEnd = () => {
               answer. Even if you don't figure it out, the simple exercise
               of trying is preparing you for your job. Learn how to search on google or youtube, how to find keywords in
               a page using ctrl + f, how to formulate the question.
-              You must learn how to learn. If you're here, and you're stuck on something, you can ever write to me. I
-              am more than glad to help you.
+              You must learn how to learn. The art of figuring it out includes searching online or asking a friend. It doesn't matter what it takes, just figure it out. I
             </p>
             <p>
               Be organised!! This is a skill that takes you to another level in life. I have all my life saved in
