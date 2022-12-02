@@ -5,17 +5,11 @@ export const BodyContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80%;
+  width: 60%;
   margin: 10rem auto;
   box-shadow: 0 0 60px -40px #aaa;
   border: 1px solid #fff;
   padding: .7rem 2rem 2rem;
-
-  @media screen and (max-width: 1000px) {
-    width: 95%;
-    margin: 8rem auto;
-    box-shadow: none;
-  }
 
   @media screen and (max-width: 1000px) {
     width: 95%;
@@ -66,6 +60,14 @@ export const VideoContainer = styled.iframe`
   width: 60%;
   aspect-ratio: 16 / 9;
   align-self: center;
+
+  @media screen and (max-width: 1000px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 `
 
 export const ResourceTitle = styled(Link)`

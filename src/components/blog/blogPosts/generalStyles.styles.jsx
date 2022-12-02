@@ -8,6 +8,7 @@ export const PostContainer = styled.div`
   width: 80%;
 
   @media screen and (max-width: 600px) {
-    margin: 5%;
+    margin: 0;
+    width: 100%;
   }
 `;

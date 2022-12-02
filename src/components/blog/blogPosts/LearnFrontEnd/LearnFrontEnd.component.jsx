@@ -233,7 +233,7 @@ const LearnFrontEnd = () => {
               answer. Even if you don't figure it out, the simple exercise
               of trying is preparing you for your job. Learn how to search on google or youtube, how to find keywords in
               a page using ctrl + f, how to formulate the question.
-              You must learn how to learn. The art of figuring it out includes searching online or asking a friend. It doesn't matter what it takes, just figure it out. I
+              You must learn how to learn. The art of figuring it out includes searching online or asking a friend. It doesn't matter what it takes, just figure it out.
             </p>
             <p>
               Be organised!! This is a skill that takes you to another level in life. I have all my life saved in
