@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import ModifiedHeader from "../modifiedHeader/modifiedHeader.component";
 import Profilepic from "../../assets/images/Profilepic.jpg";
 import turtle from "../../assets/images/turtle.jpg";
-import ReduxHooks from "../../assets/images/ReduxHooks.png";
 
 import COURSES_DATA from "./courses.data.js";
 
@@ -41,19 +40,19 @@ const AboutMe = () => {
             />
           </AboutParagraphContainer>
 
-          <AboutParagraphContainer>
-            <span style={{ fontWeight: "bold", color: "#7e72c0" }}>
-              As for knowledge,
-            </span>
-            <br />I started with a lot of CSS (this page doesn't really help me,
-            but it's just a prototype), went into Javascript, turned over every
-            rock there, and then React.js(with Redux) where I fell in love with
-            hooks. Too bad they can't replace Redux entirely.
-            <ParagraphPictureContainer
-              src={ReduxHooks}
-              alt="Redux and Hooks picture"
-            />
-          </AboutParagraphContainer>
+          {/*<AboutParagraphContainer>*/}
+          {/*  <span style={{ fontWeight: "bold", color: "#7e72c0" }}>*/}
+          {/*    As for knowledge,*/}
+          {/*  </span>*/}
+          {/*  <br />I started with a lot of CSS (this page doesn't really help me,*/}
+          {/*  but it's just a prototype), went into Javascript, turned over every*/}
+          {/*  rock there, and then React.js(with Redux) where I fell in love with*/}
+          {/*  hooks. Too bad they can't replace Redux entirely.*/}
+          {/*  <ParagraphPictureContainer*/}
+          {/*    src={ReduxHooks}*/}
+          {/*    alt="Redux and Hooks picture"*/}
+          {/*  />*/}
+          {/*</AboutParagraphContainer>*/}
           <AboutParagraphContainer>
             <span style={{ fontWeight: "bold", color: "#7e72c0" }}>
               Here is a list with links of all the courses that I took from last
