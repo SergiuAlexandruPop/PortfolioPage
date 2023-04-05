@@ -21,7 +21,7 @@ const DailyHealth = () => {
             </MainText>
             <ul>
               <ListContainer>Sleep: Aim for 8 hours of sleep every night.</ListContainer>
-              <ListContainer>Sunlight: Spend 15 minutes in the sun first thing in the morning to boost your vitamin D
+              <ListContainer>Sunlight: Spend 15 minutes in the sun first thing in the morning to boost your cortisol
                 levels.</ListContainer>
               <ListContainer>Coffee: Avoid drinking coffee in the first two hours of the day and in the last 10 hours of
                 the day.</ListContainer>
