@@ -39,7 +39,7 @@ const Portfolio = () => {
             </ParagraphContainer>
           </ProjectDetailsContainer>
           <ButtonsContainer>
-            <ButtonContainer onClick={liveLinkClick}>Live</ButtonContainer>
+            {/*<ButtonContainer onClick={liveLinkClick}>Live</ButtonContainer>*/}
             <ButtonContainer onClick={gitubLinkClick}>Github</ButtonContainer>
           </ButtonsContainer>
         </ProjectClothingContainer>
